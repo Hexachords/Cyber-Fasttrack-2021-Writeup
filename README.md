@@ -25,7 +25,7 @@
 
 
 - - - -
-![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/BE01_1.png)
+
 ### BE01 - Binary
 >Briefing: Download the file and find a way to get the flag.
 Contents: chicken.pdf
@@ -47,7 +47,7 @@ And it works, if we follow the chain of opening files we finally reach egg.pdf w
 **Flag:** <code>wh1ch_came_f1rst?</code>
 
 - - - -
-![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/BE02_1.png)
+
 ### BE02 - Binary
 >Briefing: Download the file and find a way to get the flag.
 Contents: rot13
