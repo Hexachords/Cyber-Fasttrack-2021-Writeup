@@ -56,7 +56,7 @@ Contents: rot13
  
 In this challenge we are given a file called rot13 and if we run it we get.
 
-![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/BE02_Input.pngg)
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/BE02_Input.png)
 
 This input seems to be using a cipher possibly rot13. Now with any binary challenges I like to try to and see what would happen if just input a lot of information into the prompt, this is more or less a buffer overflow and it can reveal information about whats going on behind the scenes.
 
