@@ -103,7 +103,22 @@ After a bit of googling I am able to find a site that can repair QR codes(https:
 **Flag:** <code>A_Code_For_A_Code</code>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### FE04
+### FE04 - Forensics 
+>Briefing: Download the file and filter down to the username according to criteria below.
+
+>The username you are looking for has x as the 3rd character, followed immediately by a number from 2 to 6, it has a Z character in it and the last character is S.
+
+>When you have the username, submit it as the flag.Contents: 50k-users.txt
+
+In this challenge we are given a massive list of user names (50 thousand) and we are to find the specific username that matches up with the requirements above. 
+
+For this one I went straight to cyberchef, cyberchef has an easy to use reg ex command that makes it easy to sort through tons of information.
+
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/FE04.png)
+I used the recipe <code>..x[2-6].....*S$</code>
+Afterwords I exported the rest of the usernames into a text document and used a "Ctrl+F" to search for the letter "Z" to find my flag. 
+
+**Flag:** <code>YXx52hsi3ZQ5b9rS</code>
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
