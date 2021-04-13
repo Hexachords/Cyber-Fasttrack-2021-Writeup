@@ -26,7 +26,7 @@
 
 - - - -
 
-### BE01 - Binary
+## BE01 - Binary
 >Briefing: Download the file and find a way to get the flag.
 Contents: chicken.pdf
 
@@ -48,7 +48,7 @@ And it works, if we follow the chain of opening files we finally reach egg.pdf w
 
 - - - -
 
-### BE02 - Binary
+## BE02 - Binary
 >Briefing: Download the file and find a way to get the flag.
 Contents: rot13
 
@@ -69,7 +69,7 @@ And it works! (This probably wasn't the way the challenge was intended to be sol
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### CM01 - Crypto
+## CM01 - Crypto
 >Briefing: Download the file and find a way to get the flag.
 Contents: code.png, frame.png
 
@@ -103,7 +103,7 @@ After a bit of googling I am able to find a site that can repair QR codes(https:
 **Flag:** <code>A_Code_For_A_Code</code>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### FE04 - Forensics 
+## FE04 - Forensics 
 >Briefing: Download the file and filter down to the username according to criteria below.
 
 >The username you are looking for has x as the 3rd character, followed immediately by a number from 2 to 6, it has a Z character in it and the last character is S.
@@ -115,6 +115,7 @@ In this challenge we are given a massive list of user names (50 thousand) and we
 For this one I went straight to cyberchef, cyberchef has an easy to use reg ex command that makes it easy to sort through tons of information.
 
 ![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/FE04.png)
+
 I used the recipe <code>..x[2-6].....*S$</code>
 Afterwords I exported the rest of the usernames into a text document and used a "Ctrl+F" to search for the letter "Z" to find my flag. 
 
@@ -122,9 +123,27 @@ Afterwords I exported the rest of the usernames into a text document and used a 
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### FM01
+## FM01
+>Briefing: Download the file and find a way to get the flag.
 
+>Contents: fm01.jpg
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/FM01_1.png)
 
+In this section we are given a jpg, when opened has some crazy colors in it. My first idea was that this was definitively a stenography challenge, so i booted up stegsolve on and started messing around with different color pallets, 
+
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/FM01_2.png)
+
+The closest I was able to get was with the blue overlay, I switched over to my windows OS since I had some more stegtools already downloaded on there. But when I look over at the file preview in the folder I notice something.
+
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/FM01_4.png)
+
+I don't know how but the picture is showing more readable parts, I quickly take a screen shot and then blow it up in paint.
+
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/FM01_5.png)
+
+If you tilt your head back or stand away from the computer you can kinda make out enough of the flag to decode it. After a trying a few different answers I obtain the real flag.
+
+**Flag:** <code>tr4il3r_p4rk</code>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### FM02
