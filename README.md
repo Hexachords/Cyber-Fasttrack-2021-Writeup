@@ -26,15 +26,21 @@
 ### BE01 - Binary
 >Briefing: Download the file and find a way to get the flag.
 Contents: chicken.pdf
+
  ![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/BE01_2.png)
  
 In this challenge we are given a file chicken.pdf and we are expected to find a flag in it, off the bat there is nothing really go off. There is no hidden text in white in the pdf . With no idea what to do next I decide to check the chicken.pdf headers in a hex editor
+
 ![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/BE01_3.png)
+
 While checking this I see something more interesting, there is an "egg.zip" and "chicken.zip" headers hidden in this pdf,  which means that there is files hidden in this file that can be extracted. Just to see if it would work I change the files extension from a pdf to a zip.
 
 ![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/BME1_EggChick.png)
+
 And it works, if we follow the chain of opening files we finally reach egg.pdf which contains the flag.
+
 ![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/BE01_Flag.png)
+
 **Flag:** <code>wh1ch_came_f1rst?</code>
 
 - - - -
