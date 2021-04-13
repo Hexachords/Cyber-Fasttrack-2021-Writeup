@@ -73,19 +73,30 @@ And it works! (This probably wasn't the way the challenge was intended to be sol
 >Briefing: Download the file and find a way to get the flag.
 Contents: code.png, frame.png
 
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/CM01_2.png)
 
 In this challenge we are given a QR Code that is broken along with a another QR code called frame. If you scan the frame it tells you 
 <code>"Hey , I've put the flag into the other file using the same trick we always use. You know what to do :)"</code>
 
 I have no idea what this means or even what to do, my first guess is that I have to repair this QR code manually , so I open up GIMP and get to recoloring the broken parts using the frame as a guide.
 
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/CM01_3.png)
+
 That is  when I realize, I am just tracing frame over the original broken QR code and it overlaps with the messed up parts in the code.png . So If i were to subtract the frame from the code I might get something that I can use.
 
-After a few mistakes I am able to produce a readable QR code, only issue though is when you scan it it give you no input. After a bit of googling I am able to find a site that can repair QR codes(https://merricx.github.io/qrazybox/)
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/CM01_4.png)
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/CM01_5.png)
+
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/CM01_6.png)
+
+After a few mistakes I am able to produce a readable QR code, only issue though is when you scan it it give you no input. 
+After a bit of googling I am able to find a site that can repair QR codes(https://merricx.github.io/qrazybox/)
  It is unable to decode the string but I am able to get the bits
  <code>["01110001","10100101","00010111","01000110","01001100","00000001","01000111","00111010","00100000","01000001","01011111","01000011","01101111","01100100","01100101","01011111","01000110","01101111","01110010","01011111","01001001","01011111","01000011","01101111","01101100","01100101","00000000","11101100","00110001","11101100","00011001","11101100","00010001","11101100","00011011","10011111","11010101","00100011","00101111","11111000","01110000","01011000","10111101","10101110"]</code>
  
  I put the bits into a binary to text translator and get
+ 
+ ![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/CM01_7.png)
  
  However this flag is not accepted, after a small bit of trial and error , I am able to get the real flag
  
