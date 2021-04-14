@@ -151,12 +151,27 @@ If you tilt your head back or stand away from the computer you can kinda make ou
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### NE01
+## NE01 - Networking 
+>Briefing: There is a TCP network service running on cfta-ne01.allyourbases.co. Find it to get the flag after you connect.
+
+>Note: The target has many open ports - only one is the correct one. The correct port will identify itself with ID: ne01 after you connect.
+
+This is a simple challenge, we just need to scan all the ports on this host and find the ones that are up.
+
+The command I used was <code>nmap -sT -Pn -p- cfta-ne01.allyourbases.co</code>
+this will scan all the possible ports and report back after its done.
+Then all thats left to do is to nc into the host at the correct port.
+
+
+
+
+
+**Flag:** <code>Nmap_0f_the_W0rld!</code>
 
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### NM01
+### NM01 - Networking
 
 - - - -
 
