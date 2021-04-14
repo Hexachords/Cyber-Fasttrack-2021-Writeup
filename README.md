@@ -162,6 +162,7 @@ The command I used was <code>nmap -sT -Pn -p- cfta-ne01.allyourbases.co</code>
 this will scan all the possible ports and report back after its done.
 Then all thats left to do is to nc into the host at the correct port.
 
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/ne01_1.png)
 
 
 
