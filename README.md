@@ -136,7 +136,7 @@ Afterwords I exported the rest of the usernames into a text document and used a 
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-## FM01
+## FM01 - Forensics
 >Briefing: Download the file and find a way to get the flag.
 
 >Contents: fm01.jpg
@@ -159,8 +159,28 @@ If you tilt your head back or stand away from the computer you can kinda make ou
 **Flag:** <code>tr4il3r_p4rk</code>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### FM02
+## FM02 - Forensics
+>Briefing: Download the file and find a way to get the flag.
+Contents: IRC-cap-vpn.pcapng
 
+In this challenge we are given a pcapng and are expected to find a flag somewhere in here.
+After we load up wireshark if we start looking through the packets you will notice there is IRC conversation going on here.
+If you click follow we can see the conversation
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/FM02_1.png)
+
+From this conversation we now know that there is a Flag.7z being sent that needs a password
+<code>TWFyaW9SdWxlejE5ODU=</code>
+If we put the password into cyberchef it should be able to decode it
+<code>decoded from base64 : MarioRulez1985 </code>
+
+Afterwords we need to retrieve the file, if we search through the streams we eventually find the Flag.7z, from here we can highlight the packet, change the out put as raw and then save it as Flag.7z
+From here we put in the password and then we get Flag.nes
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/FM02_2.png)
+
+Then we do the command strings Flag.nes and get
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/FM02_3.png)
+
+**Flag:** <code>NESted_in_a_PCAP</code>
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
