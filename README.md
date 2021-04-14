@@ -242,6 +242,7 @@ Flag found!
 >Briefing: View the page at https://cfta-we02.allyourbases.co and try to get the flag.
 
 I start off this challenge by checking to see if there is anything in the robots.txt 
+
 ![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/WE02_1.png)
 
 Well this is interesting, If we head to the site that is listed we then get this
