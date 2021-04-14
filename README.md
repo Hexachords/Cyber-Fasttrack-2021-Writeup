@@ -1,8 +1,16 @@
-# Cyber-Fasttrack-2021-Writeup
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/CyberFast%20Track)
+# Cyber Fasttrack SPRING CTF 2021 Writeup
+"Cyber FastTrack is a free, online scholarship competition sponsored by the National Cyber Scholarship Foundation, the Center for Internet Security and WiCyS"
+For more information vist https://cyber-fasttrack.org/ 
+
+This a cyber-security competition where you compete for two days against other students to solve as many challenges as possible. It is done jeopardy style where you are trying to retrieve a flag. This being one of my first real competitions I felt really out of my league, but I was still able to snag 128th / 1,590 players. The challenges were pretty rough but they made you really think about what you were doing and research what options you could do. I spent a huge chunk of my time looking up tutorials and googling different topics to figure out what to do.
+Overall I had a lot of fun and will definitely back around when they open up spring next year! 
 
 
+- - - -
 
-
+## Challenges
+Below are the categories and the challenges that I was able to solve
 
 ##### Binary
 * BE01
