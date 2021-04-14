@@ -89,7 +89,7 @@ That is  when I realize, I am just tracing frame over the original broken QR cod
 
 ![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/CM01_6.png)
 
-After a few mistakes I am able to produce a readable QR code, only issue though is when you scan it it give you no input. 
+After a few mistakes I am able to produce a readable QR code, only issue though is when you scan it, it gives you no input. 
 After a bit of googling I am able to find a site that can repair QR codes(https://merricx.github.io/qrazybox/)
  It is unable to decode the string but I am able to get the bits
  <code>["01110001","10100101","00010111","01000110","01001100","00000001","01000111","00111010","00100000","01000001","01011111","01000011","01101111","01100100","01100101","01011111","01000110","01101111","01110010","01011111","01001001","01011111","01000011","01101111","01101100","01100101","00000000","11101100","00110001","11101100","00011001","11101100","00010001","11101100","00011011","10011111","11010101","00100011","00101111","11111000","01110000","01011000","10111101","10101110"]</code>
