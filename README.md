@@ -172,7 +172,37 @@ Then all thats left to do is to nc into the host at the correct port.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### NM01 - Networking
+## NE01 - Networking 
+>Briefing: There is a TCP network service running on cfta-ne01.allyourbases.co. Find it to get the flag after you connect.
+
+>Note: The target has many open ports - only one is the correct one. The correct port will identify itself with ID: ne01 after you connect.
+
+Once we connect we are greeted with this message, 
+
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/NM01_1.png)
+
+It seems like it wants the hex value input to be sent back to it , after trying a few times it seems like the hex values also change each time and can be mapped to letters
+
+
+My first though is to create a python script that will spit out the input back to the command line, after a bit of googling and failing alot I create godwhy.py. 
+
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/NM01_2.png)
+
+This script should strip the input of the \x and only leave the hex values behind.
+
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/NM01_3.png)
+
+It works but it has one major issue, I can't see any input after I pipe the input to the python script. I have no idea if its actually working and sending the information back or just failing.
+
+I came back to this one later on in the competition and out of sheer desperation I try running another pipe that will connect back into the host. 
+
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/NM01_4.png)
+
+And it works!
+
+
+
+**Flag:** <code>o[hex]=>i[ascii]=:)</code>
 
 - - - -
 
