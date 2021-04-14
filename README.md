@@ -251,7 +251,7 @@ If you google the language you end up being linked to a twitter post of the crea
 
 ![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/WE01_2.png)
 
-That lead to a website where the creator of the this script explained the funtionality of it, unforuntantely it still wasn't making much sense to me. I understood it was javascript but other than that I was drawing blanks. 
+That lead to a website where the creator of the this script explained the funtionality of it, unfortunately it still wasn't making much sense to me. I understood it was javascript but other than that I was drawing blanks. 
 I tried manually decoding it using a Aurebesh alphabet but the translation was making no sense.
 
 Eventually we got a hint released to use 
