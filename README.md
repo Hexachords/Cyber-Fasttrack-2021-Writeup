@@ -206,7 +206,34 @@ And it works! for some reason! (I honestly am still confused on to why this work
 
 - - - -
 
-### WE01
+## WE01 - Web Applications
+>Briefing: View the page at https://cfta-we01.allyourbases.co and try to get the flag.
+>
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/WE01_1.png)
+
+When you first connect you are greeted with a giant glowing wall of text that is made of up random shapes.
+Right off the bat, I go to see if the site has a robots.txt file, no luck. I then head over to inspect the elements.
+
+If you google the language you end up being linked to a twitter post of the creator who made this.
+
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/WE01_2.png)
+
+That lead to a website where the creator of the this script explained the funtionality of it, unforuntantely it still wasn't making much sense to me. I understood it was javascript but other than that I was drawing blanks. 
+I tried manually decoding it using a Aurebesh alphabet but the translation was making no sense.
+
+Eventually we got a hint released to use 
+
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/WE01_3.png)
+
+And then it all clicked, I opened up the dev console, copied the weird code and ran it
+
+![picture alt](https://github.com/Hexachords/Cyber-Fasttrack-2021-Writeup/blob/main/WE01_FLAG.png)
+
+Flag found!
+
+
+**Flag:** <code>unicode+obfuscation=js*fun</code>
+
 
 
 - - - -
